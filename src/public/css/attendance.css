@@ -1,0 +1,115 @@
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* 日付ナビゲーション */
+#custom-date-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#custom-date-form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#display-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+button#prev-date,
+button#next-date {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+}
+
+button#prev-date:hover,
+button#next-date:hover {
+    color: #0056b3;
+}
+
+/* テーブルのスタイル */
+.attendance__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance__table th {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.attendance__table td {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.attendance__row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: white;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer p {
+    font-size: 12px;
+    color: #999;
+}

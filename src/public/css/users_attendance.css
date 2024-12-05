@@ -1,0 +1,73 @@
+/* users_attendance.css */
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* 月次切り替えフォーム */
+.month-switch-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.month-switch-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.month-switch-form button:hover {
+    background-color: #0056b3;
+}
+
+.month-switch-form span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* テーブルのデザイン */
+.attendance__table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.attendance__table th {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.attendance__table td {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.attendance__table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.attendance__table tr:hover {
+    background-color: #f1f1f1;
+}

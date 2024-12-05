@@ -1,0 +1,95 @@
+/* コンテナの中央揃えと余白設定 */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ユーザー名表示のスタイル */
+.text-end p {
+    font-weight: bold;
+    color: #666;
+    font-size: 18px;
+}
+
+/* ボタン行のレイアウト */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* ボタンスタイルの設定 */
+
+button.btn-success {
+    background-color: #28a745;
+    font-size: 25px;
+    padding: 50px 80px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    flex: 1;
+    margin: 0 5px;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+    font-size: 25px;
+    padding: 50px 80px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    flex: 1;
+    margin: 0 5px;
+}
+
+button.btn-warning {
+    background-color: #ffc107;
+    color: #333;
+    font-size: 25px;
+    padding: 50px 80px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    flex: 1;
+    margin: 0 5px;
+}
+
+button.btn-info {
+    background-color: #17a2b8;
+    font-size: 25px;
+    padding: 50px 80px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    flex: 1;
+    margin: 0 5px;
+}
+
+/* ボタンのホバー時の効果 */
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* メッセージ表示エリアのスタイル */
+#message {
+    font-size: 16px;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* 無効化されたボタンのスタイル */
+button:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+    border: none;
+}
