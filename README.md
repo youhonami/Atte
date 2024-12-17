@@ -27,18 +27,19 @@
 - Laravel8.83.27
 - MySQL8.0.26
 
-##テーブル設計
-![テーブル設計図](src/.drawio.png)
+## テーブル設計
+
+![テーブル](table.drawio.png)
 
 ## ER 図
 
-![ER図](src/.drawio.png)
+![ER図](er.drawio.png)
 
 ## 環境構築
 
 **Docker ビルド**
 
-1. 『git の URL』
+1. https://github.com/youhonami/Atte.git
 2. DockerDesktop アプリを立ち上げる
 3. `docker-compose up -d --build`
 
@@ -90,4 +91,3 @@ php artisan db:seed
 
 - 開発環境：http://localhost/products
 - phpMyAdmin:：http://localhost:8080/
-# Atte
