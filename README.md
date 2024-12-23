@@ -91,3 +91,4 @@ php artisan db:seed
 
 - 開発環境：http://localhost/products
 - phpMyAdmin:：http://localhost:8080/
+  https://mysterious-springs-71948-66a08167936b.herokuapp.com/
