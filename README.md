@@ -6,8 +6,7 @@
 人事評価のため
 
 ##アプリケーション URL
-
-##他のリポジトリ
+https://mysterious-springs-71948-66a08167936b.herokuapp.com/ ##他のリポジトリ
 
 ##機能一覧
 会員登録
@@ -91,4 +90,3 @@ php artisan db:seed
 
 - 開発環境：http://localhost/products
 - phpMyAdmin:：http://localhost:8080/
-  https://mysterious-springs-71948-66a08167936b.herokuapp.com/
