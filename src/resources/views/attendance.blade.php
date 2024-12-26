@@ -31,25 +31,25 @@
 
         // 日付を更新してフォームを送信する関数
         function updateDate(newDate) {
-            const formattedDate = newDate.toISOString().split('T')[0]; // yyyy-mm-dd形式
-            dateInput.value = formattedDate; // フォームの日付を更新
-            displayDate.textContent = formattedDate; // 表示部分の日付を更新
+            const formattedDate = newDate.toISOString().split('T')[0];
+            dateInput.value = formattedDate;
+            displayDate.textContent = formattedDate;
         }
 
         // 「<」ボタンをクリックした場合
         prevDateButton.addEventListener('click', function() {
-            const newDate = new Date(dateInput.value || new Date()); // 現在の日付または今日
-            newDate.setDate(newDate.getDate() - 1); // 1日前に設定
-            updateDate(newDate); // 日付を更新
-            form.submit(); // フォームを送信
+            const newDate = new Date(dateInput.value || new Date());
+            newDate.setDate(newDate.getDate() - 1);
+            updateDate(newDate);
+            form.submit();
         });
 
         // 「>」ボタンをクリックした場合
         nextDateButton.addEventListener('click', function() {
-            const newDate = new Date(dateInput.value || new Date()); // 現在の日付または今日
-            newDate.setDate(newDate.getDate() + 1); // 1日後に設定
-            updateDate(newDate); // 日付を更新
-            form.submit(); // フォームを送信
+            const newDate = new Date(dateInput.value || new Date());
+            newDate.setDate(newDate.getDate() + 1);
+            updateDate(newDate);
+            form.submit();
         });
 
         // 入力フィールドを直接変更した場合

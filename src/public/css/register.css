@@ -85,8 +85,8 @@
 }
 
 .form__error {
-    color: #ff0000; /* 赤色 */
+    color: #ff0000;
     font-size: 12px;
     margin-top: 5px;
-    text-align: left; /* 左揃え */
+    text-align: left;
 }

@@ -26,9 +26,9 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* 横並び */
-    gap: 20px; /* 各項目の間にスペース */
-    justify-content: flex-end; /* 念のため右寄せ */
+    display: flex; 
+    gap: 20px;
+    justify-content: flex-end; 
 }
 
 .header-nav__item {
@@ -38,13 +38,13 @@ body {
 /* ボタンとリンクの共通スタイル */
 .header-nav__link,
 .header-nav__button {
-    font-size: 16px; /* 文字の大きさを統一 */
-    color: #333; /* 文字の色を統一 */
-    font-weight: 500; /* 太さを統一 */
-    text-decoration: none; /* リンクの下線を消す */
-    cursor: pointer; /* ボタンとリンクにカーソルを合わせるとポインターが表示 */
-    background-color: transparent; /* 背景色を透明にする */
-    border: none; /* 枠線を削除 */
+    font-size: 16px; 
+    color: #333; 
+    font-weight: 500; 
+    text-decoration: none; 
+    cursor: pointer; 
+    background-color: transparent; 
+    border: none; 
 }
 
 .footer {

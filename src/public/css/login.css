@@ -58,13 +58,13 @@
 
 .form__button-submit {
     display: block;
-    width: 100%; /* パスワード入力と同じ幅にする */
-    padding: 10px 0; /* ボタンの高さ */
+    width: 100%; 
+    padding: 10px 0; 
     font-size: 16px;
-    background-color: #007bff; /* ボタンの背景色 */
-    color: white; /* ボタンの文字色 */
+    background-color: #007bff; 
+    color: white; 
     border: none;
-    border-radius: 5px; /* 角丸を追加 */
+    border-radius: 5px; 
     cursor: pointer;
     text-align: center;
 }
