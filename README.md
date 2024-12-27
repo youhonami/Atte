@@ -10,6 +10,7 @@
 
 本番環境
 https://mysterious-springs-71948-66a08167936b.herokuapp.com/
+
 Application error（at=error code=H10）が未解決のためページ表示不可
 
 ## 機能一覧
@@ -96,3 +97,7 @@ php artisan db:seed
 
 - 開発環境：http://localhost/login
 - phpMyAdmin:：http://localhost:8080/
+
+## その他
+
+共有不足等ありましたらご連絡ください。
