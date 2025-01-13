@@ -14,7 +14,7 @@
     @yield('css')
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <div class="header__inner">
             <div class="header-utilities">

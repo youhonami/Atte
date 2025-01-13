@@ -1,4 +1,5 @@
-main {
+/* コンテナのスタイル */
+.main {
     max-width: 1200px;
     margin: 20px auto;
     background-color: white;
@@ -7,7 +8,8 @@ main {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+/* ページタイトルのスタイル */
+.page-title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 22px;
@@ -15,26 +17,37 @@ h1 {
 }
 
 /* 日付ナビゲーション */
-#custom-date-form {
+.date-navigation__form {
     text-align: center;
     margin-bottom: 20px;
 }
 
-#custom-date-form div {
+.date-navigation__input {
+    display: none;
+}
+
+.date-navigation__controls {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-#display-date {
+.date-navigation__button--prev {
+    margin-right: 10px;
+}
+
+.date-navigation__button--next {
+    margin-left: 10px;
+}
+
+.date-navigation__date {
     font-size: 18px;
     font-weight: bold;
     color: #333;
 }
 
-button#prev-date,
-button#next-date {
+.date-navigation__button {
     background-color: transparent;
     border: none;
     font-size: 18px;
@@ -43,19 +56,18 @@ button#next-date {
     cursor: pointer;
 }
 
-button#prev-date:hover,
-button#next-date:hover {
+.date-navigation__button:hover {
     color: #0056b3;
 }
 
-/* テーブルのスタイル */
-.attendance__table {
+/* 勤怠テーブルのスタイル */
+.attendance-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-.attendance__table th {
+.attendance-table__label {
     background-color: #f0f0f0;
     padding: 10px;
     font-size: 14px;
@@ -63,13 +75,13 @@ button#next-date:hover {
     border-bottom: 1px solid #ddd;
 }
 
-.attendance__table td {
+.attendance-table__data {
     padding: 10px;
     font-size: 14px;
     border-bottom: 1px solid #ddd;
 }
 
-.attendance__row:nth-child(even) {
+.attendance-table__row:nth-child(even) {
     background-color: #f9f9f9;
 }
 
@@ -80,7 +92,7 @@ button#next-date:hover {
     margin-top: 20px;
 }
 
-.pagination .page-link {
+.pagination__link {
     text-decoration: none;
     color: #007bff;
     margin: 0 5px;
@@ -90,26 +102,13 @@ button#next-date:hover {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.pagination .page-link:hover {
+.pagination__link:hover {
     background-color: #007bff;
     color: white;
 }
 
-.pagination .active .page-link {
+.pagination__link--active {
     background-color: #007bff;
     color: white;
     border-color: #007bff;
-}
-
-/* フッター */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: white;
-    border-top: 1px solid #e5e5e5;
-}
-
-footer p {
-    font-size: 12px;
-    color: #999;
 }

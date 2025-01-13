@@ -6,18 +6,18 @@
 
 @section('content')
 
-<h1>日別勤怠画面</h1>
+<h1 class="page-title">日別勤怠画面</h1>
 
 <!-- 日付選択フォーム -->
-<form action="{{ route('attendance') }}" method="GET" id="custom-date-form">
+<form action="{{ route('attendance') }}" method="GET" id="custom-date-form" class="date-navigation__form">
     <!-- 非表示の date フィールド -->
-    <input type="date" id="date" name="date" value="{{ request('date', \Carbon\Carbon::today()->toDateString()) }}" style="display:none;">
+    <input type="date" id="date" name="date" value="{{ request('date', \Carbon\Carbon::today()->toDateString()) }}" class="date-navigation__input">
 
     <!-- カスタムUI -->
-    <div style="display: flex; align-items: center;">
-        <button type="button" id="prev-date" style="margin-right: 10px;">&lt;</button>
-        <span id="display-date">{{ request('date', \Carbon\Carbon::today()->toDateString()) }}</span>
-        <button type="button" id="next-date" style="margin-left: 10px;">&gt;</button>
+    <div class="date-navigation__controls">
+        <button type="button" id="prev-date" class="date-navigation__button date-navigation__button--prev">&lt;</button>
+        <span id="display-date" class="date-navigation__date">{{ request('date', \Carbon\Carbon::today()->toDateString()) }}</span>
+        <button type="button" id="next-date" class="date-navigation__button date-navigation__button--next">&gt;</button>
     </div>
 </form>
 
@@ -61,32 +61,29 @@
     });
 </script>
 
-
-
-<table class="attendance__table">
-    <tr class="attendance__row">
-        <th class="attendance__label">名前</th>
-        <th class="attendance__label">勤務開始</th>
-        <th class="attendance__label">勤務終了</th>
-        <th class="attendance__label">休憩時間</th>
-        <th class="attendance__label">勤務時間</th>
+<table class="attendance-table">
+    <tr class="attendance-table__row">
+        <th class="attendance-table__label">名前</th>
+        <th class="attendance-table__label">勤務開始</th>
+        <th class="attendance-table__label">勤務終了</th>
+        <th class="attendance-table__label">休憩時間</th>
+        <th class="attendance-table__label">勤務時間</th>
     </tr>
 
     @foreach($attendances as $attendance)
-    <tr class="attendance__row">
-        <td class="admin__data">{{$attendance->user->name}}</td>
-        <td class="admin__data">{{$attendance->start_time}}</td>
-        <td class="admin__data">{{$attendance->end_time}}</td>
-        <td class="admin__data">{{$attendance->break_duration}}</td>
-        <td class="admin__data">{{$attendance->work_time}}</td>
+    <tr class="attendance-table__row">
+        <td class="attendance-table__data">{{$attendance->user->name}}</td>
+        <td class="attendance-table__data">{{$attendance->start_time}}</td>
+        <td class="attendance-table__data">{{$attendance->end_time}}</td>
+        <td class="attendance-table__data">{{$attendance->break_duration}}</td>
+        <td class="attendance-table__data">{{$attendance->work_time}}</td>
     </tr>
     @endforeach
 </table>
+
 <!-- ページネーション -->
 <div class="pagination">
     {{ $attendances->appends(['date' => request('date')])->links('pagination::bootstrap-4') }}
 </div>
-
-
 
 @endsection
