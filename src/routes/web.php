@@ -4,7 +4,7 @@ use App\Http\Controllers\PunchController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PunchControllerController;
 use App\Http\Controllers\AttendanceController;
-
+use App\Http\Controllers\BreakController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -24,8 +24,8 @@ Route::get('/attendance', [AttendanceController::class, 'index'])->name('attenda
 Route::post('/attendance/start', [AttendanceController::class, 'startAttendance']);
 Route::post('/attendance/end', [AttendanceController::class, 'end'])->name('attendance.end');
 
-Route::post('/attendance/break/start', [AttendanceController::class, 'breakStart'])->middleware('auth');
-Route::post('/attendance/break/end', [AttendanceController::class, 'breakEnd']);
+Route::post('/attendance/break/start', [BreakController::class, 'breakStart'])->middleware('auth');
+Route::post('/attendance/break/end', [BreakController::class, 'breakEnd']);
 
 Route::post('/logout', function () {
     auth()->logout();
