@@ -22,6 +22,9 @@ class AttendancesTableSeeder extends Seeder
             'break_end_time' => '13:00:00',
             'break_duration' => '1:00:00',
             'work_time' => '8:00:00',
+            'created_at' => '2025-01-14 21:50:16',
+            'updated_at' => '2025-01-14 21:50:18'
+
         ];
         DB::table('attendances')->insert($param);
     }
