@@ -6,13 +6,6 @@
 
 人事評価のため
 
-## アプリケーション URL
-
-本番環境
-https://mysterious-springs-71948-66a08167936b.herokuapp.com/
-
-Application error（at=error code=H10）が未解決のためページ表示不可
-
 ## 機能一覧
 
 - 会員登録
@@ -25,7 +18,7 @@ Application error（at=error code=H10）が未解決のためページ表示不�
 - 日付別勤怠情報取得
 - ユーザー一覧
 - ユーザー別勤怠情報取得
-- メール認証（開発環境ではメールトラップを使用）
+- メール認証（開発環境では Mailtrap を使用）
 
 ## 使用技術(実行環境)
 
@@ -66,7 +59,7 @@ mysql:
 3. 「.env.example」ファイルを 「.env」ファイルに命名を変更。または、新しく.env ファイルを作成
 4. .env に以下の環境変数を追加
 
-```text
+```
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
@@ -93,11 +86,19 @@ php artisan migrate
 php artisan db:seed
 ```
 
+**Mailtrap 環境構築**
+
+1. https://mailtrap.io/register/signup?ref=headerにアクセス
+2. アカウントがなければ新規登録してログイン
+3. Email Testing から Add Project でプロジェクトを作成
+4. Credentials の内容を.env.dev に転記
+
+MAIL_HOST=
+MAIL_PORT=
+MAIL_USERNAME=
+MAIL_PASSWORD=
+
 ## URL
 
 - 開発環境：http://localhost/login
 - phpMyAdmin:：http://localhost:8080/
-
-## その他
-
-共有不足等ありましたらご連絡ください。
