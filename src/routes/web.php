@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\PunchController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PunchControllerController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\BreakController;
 use App\Http\Controllers\UserController;
